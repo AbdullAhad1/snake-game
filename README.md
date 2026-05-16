@@ -2,7 +2,7 @@
 
 A modern, retro-styled web-based Snake game built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS v4**.
 
-Play it live: [GitHub Pages Deployment](https://abdullahad1.github.com/snake-game/)
+Play it live: [GitHub Pages Deployment](https://abdullahad1.github.io/snake-game/)
 
 ---
 
