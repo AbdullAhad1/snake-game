@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --board-bg: #0d0f0d;
+  --snake-head: #a3e635;
+  --snake-body: #65a30d;
+  --food: #ef4444;
+  --grid-line: #1a1c1a;
+}
+
+body {
+  background-color: #0a0a0a;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* CRT scanline effect */
+.crt::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0px,
+    transparent 1px,
+    transparent 2px,
+    rgba(0, 0, 0, 0.1) 2px
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+.crt::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.4) 100%);
+  pointer-events: none;
+  z-index: 11;
+}
